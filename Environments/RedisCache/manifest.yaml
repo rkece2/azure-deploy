@@ -1,0 +1,6 @@
+name: RedisCache
+version: 1.0.0
+summary: Azure RedisCache AppEnvironment
+description: Deploys a RedisCache
+runner: ARM
+templatePath: azuredeploy.json
