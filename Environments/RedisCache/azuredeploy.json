@@ -114,13 +114,6 @@
           "resources": [
             {
               "type": "Microsoft.Network/PrivateDNSZones",
-              "apiVersion": "1.0.0.0",
-              "name": "privateLink.redis.cache.windows.net",
-              "location": "global",
-              "properties": {}
-            },
-            {
-              "type": "Microsoft.Network/PrivateDNSZones",
               "apiVersion": "2020-01-01",
               "name": "privatelink.redis.cache.windows.net",
               "location": "global",
