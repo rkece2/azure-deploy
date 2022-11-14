@@ -8,10 +8,8 @@ param resourcePrefix string = 'a${uniqueString(resourceGroup().id)}'
 @description('Tags to apply to environment resources')
 param tags object = {}
 
-var redisname = '${resourcePrefix}-hp'
-
 resource RedisCache 'Microsoft.Cache/redis@2022-06-01' = {
-  name: redisname
+  name: 'redis-test'
   location: location
   tags: tags
 }
