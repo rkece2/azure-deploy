@@ -28,7 +28,7 @@
       "type": "Microsoft.Cache/redis",
       "apiVersion": "2022-06-01",
       "name": "redis-test",
-      "location": "[parameters('location')]",
+      "location": "East US",
       "properties":{
           "sku": {
             "tier": "Basic",
@@ -62,7 +62,7 @@
                   "apiVersion": "2019-04-01",
                   "name": "pvt-end",
                   "type": "Microsoft.Network/privateEndpoints",
-                  "location": "[parameters('location')]",
+                  "location": "East US",
                   "properties": {
                     "privateLinkServiceConnections": [
                       {
@@ -172,7 +172,7 @@
               "apiVersion": "2020-03-01",
               "type": "Microsoft.Network/privateEndpoints/PrivateDNSZoneGroups",
               "name": "[concat('pvt-end', '/', 'default')]",
-              "location": "[parameters('location')]",
+              "location": "East US",
               "properties": {
                 "PrivateDNSConfigs": [
                   {
