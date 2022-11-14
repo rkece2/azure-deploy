@@ -155,7 +155,7 @@
       "name": "PrivateDNSZoneGroup_e45871c2-ea3f-4fce-afd0-262deb5ef017",
       "resources": [],
       "dependsOn": [
-        "PrivateDNS_e45871c2-ea3f-4fce-afd0-262deb5ef016",
+        "PrivateDns-e45871c2-ea3f-4fce-afd0-262deb5ef016",
         "pvt-end_rc"
       ],
       "properties": {
