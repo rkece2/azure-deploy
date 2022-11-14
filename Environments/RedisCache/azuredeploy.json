@@ -27,7 +27,7 @@
     {
       "type": "Microsoft.Cache/redis",
       "apiVersion": "2022-06-01",
-      "name": "rc-test-deploy",
+      "name": "[variables('redisname')]",
       "location": "[parameters('location')]",
       "properties":{
           "sku": {
@@ -47,7 +47,7 @@
       "apiVersion": "2017-05-10",
       "name": "pvt-end_rc",
       "dependsOn": [
-          "Microsoft.Cache/redis/rc-test-deploy"
+          "Microsoft.Cache/redis/[variables('redisname')]"
       ],
       "properties": {
         "mode": "Incremental",
@@ -152,10 +152,10 @@
     {
       "apiVersion": "2017-05-10",
       "type": "Microsoft.Resources/deployments",
-      "name": "PrivateDNSZoneGroup_e45871c2-ea3f-4fce-afd0-262deb5ef016",
+      "name": "PrivateDNSZoneGroup_e45871c2-ea3f-4fce-afd0-262deb5ef017",
       "resources": [],
       "dependsOn": [
-        "PrivateDNSZoneGroup_e45871c2-ea3f-4fce-afd0-262deb5ef016",
+        "PrivateDNS_e45871c2-ea3f-4fce-afd0-262deb5ef016",
         "pvt-end_rc"
       ],
       "properties": {
