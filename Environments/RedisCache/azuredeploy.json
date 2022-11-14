@@ -65,10 +65,10 @@
                   "properties": {
                     "privateLinkServiceConnections": [
                       {
-                        "id": "/subsciptions/8229d24d-59c4-4585-b091-ec5dc9aa0a9/resourceGroups/rg-deploy-poc/providers/Microsoft.Network/privateEndpoints/privateLinkServiceConnections/pvt-end_e062",
+                        "id": "/subsciptions/8229d24d-59c4-4585-b091-ec5d3c9aa0a9/resourceGroups/rg-deploy-poc/providers/Microsoft.Network/privateEndpoints/privateLinkServiceConnections/pvt-end_e062",
                         "name": "pvt-end_e062",
                         "properties": {
-                          "privateLinkServiceId": "/subsciptions/8229d24d-59c4-4585-b091-ec5dc9aa0a9/resourceGroups/rg-deploy-poc/providers/Microsoft.Cache/Redis/rc-deploy-poc",
+                          "privateLinkServiceId": "/subsciptions/8229d24d-59c4-4585-b091-ec5d3c9aa0a9/resourceGroups/rg-deploy-poc/providers/Microsoft.Cache/Redis/rc-deploy-poc",
                           "groupIds": [
                             "redisCache"
                           ]
@@ -77,7 +77,7 @@
                     ],
                     "manualPrivateLinkServiceConnections": [],
                     "subnet": {
-                      "id": "/subsciptions/8229d24d-59c4-4585-b091-ec5dc9aa0a9/resourceGroups/rg-deploy-poc/providers/Microsoft.Network/virtualNetworks/rg-deploy-poc-vnet/subnets/default"
+                      "id": "/subsciptions/8229d24d-59c4-4585-b091-ec5d3c9aa0a9/resourceGroups/rg-deploy-poc/providers/Microsoft.Network/virtualNetworks/rg-deploy-poc-vnet/subnets/default"
                     }
                   }
             }
@@ -93,7 +93,7 @@
           "scope": "inner"
         }
       },
-      "subscriptionId": "8229d24d-59c4-4585-b091-ec5dc9aa0a9",
+      "subscriptionId": "8229d24d-59c4-4585-b091-ec5d3c9aa0a9",
       "resourceGroup": "rg-deploy-poc"
     },
     {
@@ -127,14 +127,14 @@
             {
               "type": "Microsoft.Network/PrivateDNSZones/virtualNetworkLinks",
               "apiVersion": "2020-01-01",
-              "name": "[concat('privatelink.redis.cache.windows.net', '/', uniqueString('/subsciptions/8229d24d-59c4-4585-b091-ec5dc9aa0a9/resourceGroups/rg-deploy-poc/providers/Microsoft.Network/virtualNetworks/rg-deploy-poc-vnet'))]",
+              "name": "[concat('privatelink.redis.cache.windows.net', '/', uniqueString('/subsciptions/8229d24d-59c4-4585-b091-ec5d3c9aa0a9/resourceGroups/rg-deploy-poc/providers/Microsoft.Network/virtualNetworks/rg-deploy-poc-vnet'))]",
               "location": "global",
               "dependsOn": [
                 "Microsoft.Network/PrivateDNSZones/privatelink,redis.cache.windows.net"
               ],
               "properties": {
                 "virtualNetwork" : {
-                  "id": "/subsciptions/8229d24d-59c4-4585-b091-ec5dc9aa0a9/resourceGroups/rg-deploy-poc/providers/Microsoft.Network/virtualNetworks/rg-deploy-poc-vnet"
+                  "id": "/subsciptions/8229d24d-59c4-4585-b091-ec5d3c9aa0a9/resourceGroups/rg-deploy-poc/providers/Microsoft.Network/virtualNetworks/rg-deploy-poc-vnet"
                 },
                 "registrationEnabled": false
               }
@@ -146,7 +146,7 @@
           "scope": "inner"
         }
       },
-      "subscriptionId": "8229d24d-59c4-4585-b091-ec5dc9aa0a9",
+      "subscriptionId": "8229d24d-59c4-4585-b091-ec5d3c9aa0a9",
       "resourceGroup": "rg-deploy-poc"
     },
     {
@@ -176,7 +176,7 @@
                   {
                     "name": "privatelink-redis-cache-windows-net",
                     "properties":{
-                      "privateDNSZoneId": "/subsciptions/8229d24d-59c4-4585-b091-ec5dc9aa0a9/resourceGroups/rg-deploy-poc/providers/Microsoft.Network/privateDNSZones/privatelink.redis.cache.windows.net"
+                      "privateDNSZoneId": "/subsciptions/8229d24d-59c4-4585-b091-ec5d3c9aa0a9/resourceGroups/rg-deploy-poc/providers/Microsoft.Network/privateDNSZones/privatelink.redis.cache.windows.net"
                     }
                   }
                 ]
@@ -190,7 +190,7 @@
           "scope": "inner"
         }
       },
-      "subscriptionId": "8229d24d-59c4-4585-b091-ec5dc9aa0a9",
+      "subscriptionId": "8229d24d-59c4-4585-b091-ec5d3c9aa0a9",
       "resourceGroup": "rg-deploy-poc"
     }
   ]
