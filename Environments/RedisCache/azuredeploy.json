@@ -130,7 +130,7 @@
               "name": "[concat('privatelink.redis.cache.windows.net', '/', uniqueString('/subsciptions/8229d24d-59c4-4585-b091-ec5d3c9aa0a9/resourceGroups/rg-deploy-poc/providers/Microsoft.Network/virtualNetworks/rg-deploy-poc-vnet'))]",
               "location": "global",
               "dependsOn": [
-                "Microsoft.Network/PrivateDNSZones/privatelink,redis.cache.windows.net"
+                "Microsoft.Network/PrivateDNSZones/privatelink.redis.cache.windows.net"
               ],
               "properties": {
                 "virtualNetwork" : {
