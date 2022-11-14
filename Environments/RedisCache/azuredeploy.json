@@ -31,8 +31,8 @@
       "location": "East US",
       "properties":{
           "sku": {
-            "tier": "Basic",
-            "name": "C",
+            "name": "Basic",
+            "family": "C",
             "capacity": 0
           },
           "redisConfiguration": {},
