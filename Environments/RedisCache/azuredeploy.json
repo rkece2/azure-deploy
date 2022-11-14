@@ -27,7 +27,7 @@
     {
       "type": "Microsoft.Cache/redis",
       "apiVersion": "2022-06-01",
-      "name": "redis-test",
+      "name": "redis-test-001",
       "location": "East US",
       "properties":{
           "sku": {
@@ -47,7 +47,7 @@
       "apiVersion": "2017-05-10",
       "name": "pvt-end_rc",
       "dependsOn": [
-          "Microsoft.Cache/redis/redis-test"
+          "Microsoft.Cache/redis/redis-test-001"
       ],
       "properties": {
         "mode": "Incremental",
@@ -100,7 +100,7 @@
     {
       "apiVersion": "2017-05-10",
       "type": "Microsoft.Resources/deployments",
-      "name": "PrivateDNS-e45871c2ea3f4fceafd0262deb5ef016",
+      "name": "PrivateDNS-e458",
       "resources": [],
       "dependsOn": [],
       "properties": {

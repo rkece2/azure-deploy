@@ -9,7 +9,7 @@ param resourcePrefix string = 'a${uniqueString(resourceGroup().id)}'
 param tags object = {}
 
 resource RedisCache 'Microsoft.Cache/redis@2022-06-01' = {
-  name: 'redis-test'
+  name: 'redis-test-001'
   location: location
   tags: tags
 }
