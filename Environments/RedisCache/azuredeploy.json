@@ -115,7 +115,7 @@
             {
               "type": "Microsoft,Network/PrivateDNSZones",
               "apiVersion": "1.0.0.0",
-              "name": "privateLink.redis.cache.windows,net",
+              "name": "privateLink.redis.cache.windows.net",
               "location": "global",
               "properties": {}
             },
