@@ -38,8 +38,7 @@
           "redisConfiguration": {},
           "enableNonSslPort": false,
           "redisVersion": "6",
-          "publicNetworkAccess": "Disabled",
-          "tags": "[parameters('tags')]"
+          "publicNetworkAccess": "Disabled"
       }
     },
     {
@@ -83,7 +82,7 @@
                   }
             }
           ],
-          "ouputs": {
+          "outputs": {
             "networkInterfaceId": {
               "value": "[reference('pvt-end').networkInterfaces[0],id]",
               "type": "string"
