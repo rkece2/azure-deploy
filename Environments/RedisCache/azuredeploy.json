@@ -149,7 +149,8 @@
       "name": "PrivateDNSZoneGroup_e45871c2-ea3f-4fce-afd0-262deb5ef017",
       "resources": [],
       "dependsOn": [
-        "pvt-end_rc"
+        "pvt-end_rc",
+        "PrivateDNS-e458"
       ],
       "properties": {
         "mode": "Incremental",
