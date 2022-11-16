@@ -84,7 +84,7 @@
           ],
           "outputs": {
             "networkInterfaceId": {
-              "value": "[reference('pvt-end').networkInterfaces[0],id]",
+              "value": "[reference('pvt-end').networkInterfaces[0].id]",
               "type": "string"
             }
           }
